@@ -80,8 +80,8 @@ def menu():
     os.system('clear')
     print logo
     print '                                              \033[107;1m version :0.1\033[00;1m'
-    print '\x1b[1;93mAUTHOR   : \x1b[1;92mTwoaha'                                           
-    print '\x1b[1;93mFACEBOOK : \x1b[1;92mTwoaha'
+    print '\x1b[1;93mAUTHOR   : \x1b[1;92mTwoaha Ibn Jalal'                                           
+    print '\x1b[1;93mFACEBOOK : \x1b[1;92mTwoaha Ibn Jalal'
     print '\x1b[1;93mGITHUB   : \x1b[1;92mTwoaha'
     print ''
     print '\x1b[1;97m============================================'
